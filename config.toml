@@ -1,0 +1,7 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Notes on writing and productivity'
+theme = "etch"
+
+[params]
+    dark = "off"

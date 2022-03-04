@@ -1,0 +1,47 @@
+#+TITLE: Blogging with org-mode and hugo (part 1)
+#+DATE: 2022-03-02T23:45:09-05:00
+#+DRAFT: true
+
+Here's how I setup a simple blog using [[https://orgmode.org][org-mode]] (because great), [[https://pages.github.com][github-pages]] (because free), and [[https://gohugo.io][hugo]] (because convienent). This is somewhat involved, so I've split it up into two parts. In the first part, we'll just get an html page up and running. In the second part, we'll configure hugo.
+
+* 1. Initiate.
+Initiate a new project on [[https://github.com/new][github.com/new]]
+
+[[/blog-setup-1/1.png]]
+
+
+* 2. Clone.
+Now, clone the repository on your machine. Replace with your repo name.
+#+BEGIN_SRC bash
+git clone https://github.com/mdelhey/blog.matthewdelhey.com.git
+cd blog.matthewdelhey.com
+#+END_SRC
+
+* 3. Commit.
+Make our first commit. For now, we'll stick with a test HTML page.
+
+#+BEGIN_SRC bash
+touch index.html
+echo "TEST PAGE" > index.html
+git add -A
+git commit -m 'first commit'
+git push
+#+END_SRC
+
+* 4. Github pages.
+   IMG 2
+   gh-pages: blog URL and SSL
+   /Do not add a CNAME file/, as this will interfere with the DNS registration.
+
+   Check =Enforce HTTPS=
+
+* 5. DNS.
+We need to setup DNS next. This can be kind of tricky. Here's what my DNS settings on Namescheap looks like. (I'm using a subdomain for this blog.)
+
+[[/blog-setup-1/3.png]]
+
+
+* 6. Test.
+Pray to the DNS gods until you see your test page.
+
+[[/blog-setup-1/4.png]]
