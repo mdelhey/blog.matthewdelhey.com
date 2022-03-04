@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://blog.matthewdelhey.com'
 languageCode = 'en-us'
 title = 'Notes on writing and productivity'
 theme = "etch"
