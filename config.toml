@@ -1,6 +1,6 @@
 baseURL = 'https://blog.matthewdelhey.com'
 languageCode = 'en-us'
-title = 'Notes on writing and productivity'
+title = 'Notes on writing and process'
 theme = "etch"
 
 [params]
