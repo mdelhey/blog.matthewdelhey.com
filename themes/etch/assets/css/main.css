@@ -60,12 +60,20 @@ header#banner nav ul li a {
 }
 
 main#content a {
-    color: #007dfa;
     text-decoration: none;
+    color: #001f3f;
+    font-weight: bold;
+}
+
+main#content a:visted {
+    text-decoration: none;
+    font-weight: 300;
+    color: #001f3f;
 }
 
 main#content a:hover {
     text-decoration: underline;
+    color: #003c7a;
 }
 
 main#content h1,
@@ -132,7 +140,9 @@ main#content ul#posts li a {
 }
 
 main#content ul#posts li a:hover {
-    color: #369aff;
+    color: #003c7a;
+    text-decoration: underline;
+
 }
 
 main#content ul#posts li a:hover small {
