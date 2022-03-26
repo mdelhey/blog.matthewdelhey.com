@@ -1,8 +1,8 @@
 #+TITLE: Blogging with org-mode and hugo (part 1)
-#+DATE: 2022-03-02T23:45:09-05:00
-#+DRAFT: true
+#+DATE: March 2, 2022
+#+DRAFT: false
 
-Here's how I setup a simple blog using [[https://orgmode.org][org-mode]] (because great), [[https://pages.github.com][github-pages]] (because free), and [[https://gohugo.io][hugo]] (because convienent). This is somewhat involved, so I've split it up into two parts. In the first part, we'll just get an html page up and running. In the second part, we'll configure hugo.
+Here's how I setup a simple blog using [[https://orgmode.org][org-mode]] (because great), [[https://pages.github.com][github-pages]] (because free), and [[https://gohugo.io][hugo]] (because convenient). This is somewhat involved, so I've split it up into two parts. In the first part, we'll just get an html page up and running. In the second part, we'll configure hugo.
 
 * 1. Initiate.
 Initiate a new project on [[https://github.com/new][github.com/new]]
@@ -29,14 +29,13 @@ git push
 #+END_SRC
 
 * 4. Github pages.
-   IMG 2
-   gh-pages: blog URL and SSL
-   /Do not add a CNAME file/, as this will interfere with the DNS registration.
+/Do not add a CNAME file/, as this will interfere with the DNS registration. Check =Enforce HTTPS=.
 
-   Check =Enforce HTTPS=
+[[/blog-setup-1/2.png]]
+
 
 * 5. DNS.
-We need to setup DNS next. This can be kind of tricky. Here's what my DNS settings on Namescheap looks like. (I'm using a subdomain for this blog.)
+We need to setup DNS next. This can be kind of tricky. Here's what my DNS settings on Namecheap looks like. (I'm using a subdomain for this blog.)
 
 [[/blog-setup-1/3.png]]
 
