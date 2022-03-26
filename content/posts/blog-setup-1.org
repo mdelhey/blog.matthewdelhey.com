@@ -1,5 +1,5 @@
 #+TITLE: Blogging with org-mode and hugo (part 1)
-#+DATE: March 2, 2022
+#+DATE: 2022-03-02
 #+DRAFT: false
 
 Here's how I setup a simple blog using [[https://orgmode.org][org-mode]] (because great), [[https://pages.github.com][github-pages]] (because free), and [[https://gohugo.io][hugo]] (because convenient). This is somewhat involved, so I've split it up into two parts. In the first part, we'll just get an html page up and running. In the second part, we'll configure hugo.
